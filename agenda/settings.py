@@ -7,7 +7,7 @@ TEMPLATE_DEBUG = DEBUG
 PROJECT_ROOT = os.path.dirname(agenda.__file__)
 
 ADMINS = (
-    ('Mathieu Leduc-Hamel', 'marrakis@gmail.com'),
+    ('Maton Anthony', 'maitrenegi@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -28,11 +28,11 @@ DATABASES = {
 # although not all choices may be available on all operating systems.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Montreal'
+TIME_ZONE = 'Europe/Paris'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'fr-ca'
+LANGUAGE_CODE = 'fr-FR'
 
 SITE_ID = 1
 
@@ -99,4 +99,4 @@ FORCE_SCRIPT_NAME = ''
 
 MAX_TAG_LENGTH = 255
 
-FROM_EMAIL = "info@agendadulibre.qc.ca"
+FROM_EMAIL = "contact@anthony-maton.eu"
