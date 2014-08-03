@@ -120,13 +120,13 @@ class ICalendarFeed(object):
 
 class UpcomingEventCalendar(ICalendarFeed):
     def name(self):
-        return u"L'Agenda du libre du Québec"
+        return u"L'Agenda MozFR"
 
     def description(self):
-        return u"Tous les événements du libre du Québec"
+        return u"Tous les événements Mozilliens francophone."
 
     def timezone(self):
-        return u"America/Montreal"
+        return u"Europe/Paris"
 
     def items(self):
         start = date.today() - timedelta (days=30)
