@@ -5,7 +5,7 @@
 
   <head>
     {% block title %}
-      <title>L'Agenda du libre du Québec</title>
+      <title>L'Agenda Mozilla en Francophonie</title>
     {% endblock title %}
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="google-site-verification" content="rz4d48R0H-Yiap5gO405faHZiTN-MiLNkkmlbhjsNSY" />
@@ -14,9 +14,9 @@
     <script src="/media/js/bootstrap.min.js"></script>
     {% block feeds %}
     {% endblock feeds %}
-    <link rel="alternate" href="/event/feeds/latest/" title="Agenda du libre du Québec, nouveaux évènements" type="application/rss+xml" />
-    <link rel="alternate" href="/event/feeds/upcoming/" title="Agenda du libre du Québec, prochains évènements" type="application/rss+xml" />
-    <link rel="alternate" href="/event/calendar/" title="Agenda du libre du Québec, calendrier numérique" type="text/calendar" />
+    <link rel="alternate" href="/event/feeds/latest/" title="Agenda Mozilla Francophone, nouveaux évènements" type="application/rss+xml" />
+    <link rel="alternate" href="/event/feeds/upcoming/" title="Agenda Mozilla Francophone, prochains évènements" type="application/rss+xml" />
+    <link rel="alternate" href="/event/calendar/" title="Agenda Mozilla Francophone, calendrier numérique" type="text/calendar" />
   </head>
 
   <body>
@@ -26,10 +26,10 @@
         {% block actions %}
         {% endblock %}
       </div>
-      <h1><a href="/">L'Agenda du libre du Québec</a></h1>
-      <p id="subtitle">Tous les événements du Québec à propos de l'informatique libre</p>
+      <h1><a href="/">L'Agenda Mozilla en Francophonie</a></h1>
+      <p id="subtitle">Tous les événements francophone à propos de Mozilla</p>
     </div>
-    <div class="main">
+<!--    <div class="main">
       <p style="text-align: center;">
         <a href="http://www.agendadulibre.qc.ca/event/954/">
           <img src="/media/img/banniere-hackathon-agenda-du-libre.jpg" />
@@ -37,7 +37,7 @@
       </p>
       {% block content %}
       {% endblock content %}
-    </div>
+    </div> -->
     <div class="footer">
       <p>
         <a href="{% url agenda.views.index %}">Agenda</a> -
