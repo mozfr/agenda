@@ -14,7 +14,7 @@ L'Agenda MozFR [TEST]
 Installation
 ========
 
-Pour installer l'agenda du libre du Québec vous n'avez suivre les différentes
+Pour installer l'Agenda MozFR vous n'avez suivre les différentes
 étapes suivantes, toutefois, assurez-vous d'avoir Python 2.7.x:
 
     $ git clone http://gitlab.anthony-maton.eu/anthony/agenda-mozfr.git
