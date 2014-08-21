@@ -8,9 +8,12 @@
       <title>L'Agenda Mozilla en Francophonie</title>
     {% endblock title %}
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="google-site-verification" content="rz4d48R0H-Yiap5gO405faHZiTN-MiLNkkmlbhjsNSY" />
-    <link rel="stylesheet" type="text/css" href="/media/moderne.css" title="Moderne" />
+<!--    <meta name="google-site-verification" content="rz4d48R0H-Yiap5gO405faHZiTN-MiLNkkmlbhjsNSY" /> -->
+<!--    <link rel="stylesheet" type="text/css" href="/media/moderne.css" title="Moderne" /> -->
+    <link rel="stylesheet" type="text/css" href="/media/css/bootstrap.css" title="Bootstrap" />
+	<link rel="stylesheet" type="text/css" href="/media/css/add.css" title="add" />
     <link rel="shortcut icon" type="image/x-icon" href="/media/img/favicon.png" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="/media/js/bootstrap.min.js"></script>
     {% block feeds %}
     {% endblock feeds %}
@@ -20,14 +23,53 @@
   </head>
 
   <body>
-    <div class="header">
-      <a href="/"><img class="logo" src="/media/img/logo.png"/></a>
+    <div class="navbar navbar-default" role="navigation">
+		<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+				<span class="sr-only"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"> L'Agenda MozFR </a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="{% url agenda.views.index %}">Agenda</a>
+				</li>
+				<li>
+					<a href="{% url agenda.views.about %}">À propos</a>
+				</li>
+				<li>
+					<a href="{% url agenda.events.views.propose %}">Proposer un événement</a>
+				</li>
+				<li>
+					<a href="{% url agenda.events.views.feed_list %}">Fils RSS et iCal</a>
+				</li>
+				<li>
+					<a href="{% url agenda.events.views.stats %}">Statistiques</a>
+				</li>
+				<li>
+					<a href="mailto:marrakis@gmail.com">Contact</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="page-header">
+			<h1>L'Agenda Mozilla en Francophonie</h1>
+		</div>
+		<p class="lead">
+			Tout les événements francophone à propos de Mozilla.
+		</p>
+	</div>
       <div class="actions">
         {% block actions %}
         {% endblock %}
       </div>
-      <h1><a href="/">L'Agenda Mozilla en Francophonie</a></h1>
-      <p id="subtitle">Tous les événements francophone à propos de Mozilla</p>
     </div>
     <div class="main">
 <!--
@@ -41,16 +83,6 @@
       {% endblock content %}
     </div>
     <div class="footer">
-      <p>
-        <a href="{% url agenda.views.index %}">Agenda</a> -
-        <a href="{% url agenda.views.about %}">À propos</a> -
-        <!--  <a href="{% url django.contrib.auth.views.login %}">Connexion</a> -->
-        <a href="{% url agenda.events.views.propose %}">Proposer un événement</a> -
-        <a href="{% url agenda.events.views.feed_list %}">Fils RSS et iCal</a> -
-        <a href="{% url agenda.events.views.stats %}">Statistiques</a> -
-        <a href="mailto:marrakis@gmail.com">Contact</a>
-      </p>
-
       <br />
     </div>
   </body>
