@@ -38,7 +38,7 @@ Et voilà, et pour lancer l'agenda:
 Vous n'avez qu'à ouvrir l'url suivante: http://127.0.0.1:8000 dans votre
 navigateur !
 
-Installation en production
+Installation en production [NON TESTE]
 ===================
 
 Pour installer l'Agenda en production, on vous conseille de ne pas 

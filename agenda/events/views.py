@@ -36,8 +36,8 @@ def propose (request):
     if form.is_valid():
       e = form.save()
       msg = u"Bonjour, \n\nLe nouvel évènement '" + e.title + u"' a été soumis.  Pour le réviser, veuillez visiter\n"
-      msg += u"http://www.agendadulibre.qc.ca/admin/events/event/%d/" % e.id
-      msg += u"\n\nMerci,\n\nL'Agenda du libre du Québec"
+      msg += u"http://anthony-maton.eu:8001/admin/events/event/%d/" % e.id
+      msg += u"\n\nMerci,\n\nL'Agenda Mozfr"
       mail_moderators (u"Nouvel évènement en attente de modération", msg)
       return HttpResponseRedirect('/event/new/thanks/')
   else:
