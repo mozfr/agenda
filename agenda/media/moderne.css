@@ -255,3 +255,11 @@ input#id_submiter_email {
 h1 a {
   text-decoration: none;
 }
+@font-face{
+  font-family: "Fira Sans Regular";
+  src: url("fonts/FiraSans-Regular.woff");
+}
+body{
+ font-family: "Fira Sans Regular", serif;
+}
+
