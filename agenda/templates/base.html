@@ -1,17 +1,13 @@
 {% load banner %}
-
-<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<html lang="fr">
   <head>
     {% block title %}
       <title>L'Agenda Mozilla en Francophonie</title>
     {% endblock title %}
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<!--    <meta name="google-site-verification" content="rz4d48R0H-Yiap5gO405faHZiTN-MiLNkkmlbhjsNSY" /> -->
-<!--    <link rel="stylesheet" type="text/css" href="/media/moderne.css" title="Moderne" /> -->
-    <link rel="stylesheet" type="text/css" href="/media/css/bootstrap.css" title="Bootstrap" />
-	<link rel="stylesheet" type="text/css" href="/media/css/add.css" title="add" />
+	<link rel="stylesheet" href="/media/moderne.css" title="Moderne"/>
+	<link rel="stylesheet" href="/media/css/bootstrap.css" title="Bootstrap"  />
+	<!-- <link rel="stylesheet" type="text/css" href="/media/css/add.css" title="add" /> -->
     <link rel="shortcut icon" type="image/x-icon" href="/media/img/favicon.png" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="/media/js/bootstrap.min.js"></script>
@@ -66,36 +62,21 @@
 			Tout les événements francophone à propos de Mozilla.
 		</p>
 	</div>
-      <div class="actions">
-        {% block actions %}
-        {% endblock %}
-      </div>
+
     </div>
-    <div class="main">
-<!--
+
+    <div class="container text-center">
+	<!--
       <p style="text-align: center;">
         <a href="http://www.agendadulibre.qc.ca/event/954/">
           <img src="/media/img/banniere-hackathon-agenda-du-libre.jpg" />
         </a>
       </p>
--->
+	 -->
       {% block content %}
       {% endblock content %}
     </div>
     <div class="footer">
-<<<<<<< HEAD
-      <p>
-        <a href="{% url agenda.views.index %}">Agenda</a> -
-        <a href="{% url agenda.views.about %}">À propos</a> -
-        <!--  <a href="{% url django.contrib.auth.views.login %}">Connexion</a> -->
-        <a href="{% url agenda.events.views.propose %}">Proposer un événement</a> -
-        <a href="{% url agenda.events.views.feed_list %}">Fils RSS et iCal</a> -
-        <a href="{% url agenda.events.views.stats %}">Statistiques</a> -
-        <a href="mailto:evenements@mozfr.org">Contact</a>
-      </p>
-
-=======
->>>>>>> b998969a6ba6a482949b6c368c84d08ef6ef60af
       <br />
     </div>
   </body>

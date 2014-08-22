@@ -1,6 +1,6 @@
-/* Copyright 2006
+﻿/* Copyright 2006
  * - Erwan Leherisse  <air1ontheweb CHEZ free POINT fr>
- * - M�lanie Bats  <melanie POINT bats CHEZ utbm POINT fr>
+ * - Mélanie Bats  <melanie POINT bats CHEZ utbm POINT fr>
  * - Thomas Petazzoni  <thomas POINT petazzoni CHEZ enix POINT org>
  * - Jean-Marie Favreau  <jeanmarie POINT favreau CHEZ free POINT fr>
  * - Pierre-Luc Beaudoin  <pierre-luc POINT beaudoin CHEZ novopia POINT com>
@@ -21,61 +21,6 @@
  * 02111-1307, USA.
  */
 
-body {
-  background-color: #c7e0ed;
-  color: black;
-  font-size: 11pt;
-  font-family: Arial,Helvetica,sans-serif;
-}
-
-div.header {
-  padding: 10px;
-  background: url('/media/img/bg.png') repeat-x white;
-  height: 75px;
-  -moz-border-radius: 20px 20px 0 0;
-  -webkit-border-top-left-radius: 20px;
-  -webkit-border-top-right-radius: 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-div.main {
-  padding: 10px;
-  background: white;
-  max-width: 1200px;
-  margin: auto;
-}
-
-div.footer {
-  background: url('/media/img/bg.png') repeat-x white;
-  padding: 10px;
-  color: black;
-  text-align: center;
-  -moz-border-radius: 0 0 20px 20px;
-  -webkit-border-bottom-left-radius: 20px;
-  -webkit-border-bottom-right-radius: 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-div.header img.logo {
-  float: left;
-  padding: 5px 10px 5px 5px;
-  border: 0px;
-}
-
-div.header div.actions {
-  float: right;
-  padding: 10px;
-  margin-top: 10px;
-}
-
-div.header div.actions div.action img {
-  border: 0px;
-  padding: 2px 5px 2px 2px;
-  vertical-align: middle;
-}
-
 #important
 {
   position: absolute;
@@ -92,33 +37,7 @@ div.header div.actions div.action img {
   padding: 2px;
   font-size: 12pt;
 }
-
-h1 {
-  font-family : Georgia, serif;
-  margin-bottom: 5px;
-}
-
-h2 {
-  color : #5d6064;
-  margin-top: 0;
-}
-
-h2.calendar {
-  text-align: center;
-}
-
-a {
-  color: #336699;
-}
-
-a:visited {
-  color: #336699;
-}
-
-a:hover, a:active {
-  color: #5b8ec2;
-}
-
+*/
 table.form {
   border-collapse: collapse;
 }
@@ -336,4 +255,3 @@ input#id_submiter_email {
 h1 a {
   text-decoration: none;
 }
-
